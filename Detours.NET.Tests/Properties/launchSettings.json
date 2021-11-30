@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Detours.NET.Tests": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
