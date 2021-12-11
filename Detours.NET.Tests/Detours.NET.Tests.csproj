@@ -11,11 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Vanara.PInvoke.Kernel32" Version="3.3.14" />
+    <ProjectReference Include="..\Detours.NET\Detours.NET.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Detours.NET\Detours.NET.csproj" />
+    <PackageReference Include="Vanara.PInvoke.Kernel32" Version="3.3.14" />
   </ItemGroup>
 
 </Project>

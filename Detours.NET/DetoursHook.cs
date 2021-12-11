@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DetoursNET
 {
-    public class DetoursHook<TDelegate> : IDisposable
+    public class DetoursHook<TDelegate> : IDisposable where TDelegate : Delegate
     {
         public unsafe void* OriginalPtr { get; private set; }
         public unsafe void* OriginalFuncPtr { get; private set; }
