@@ -1,11 +1,10 @@
 ﻿using System;
 
-namespace DetoursNET
+namespace DetoursNET;
+
+public interface IDetoursHook : IDisposable
 {
-    public interface IDetoursHook : IDisposable
-    {
-        public unsafe void* OriginalPtr { get; }
-        public unsafe void* OriginalFuncPtr { get; }
-        public unsafe void* DetourPtr { get; }
-    }
+    public unsafe void* OriginalPtr { get; }
+    public unsafe void* OriginalFuncPtr { get; }
+    public unsafe void* DetourPtr { get; }
 }
